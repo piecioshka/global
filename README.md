@@ -1,4 +1,4 @@
-## It's one way to get global scope.
+## There is one way to get global scope!
 
 ## On ECMAScript 3
 ```
@@ -12,6 +12,7 @@ var global = (1,eval)('this'); // ES5 strict
 
 ## Cross-platform Solution
 ```
+"use strict";
 var global = (function(){ return this || (1,eval)('this') })();
 ```
 
